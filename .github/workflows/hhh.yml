@@ -13,6 +13,6 @@ jobs:
         run: python3 ./src/app/app.py &
       - name: Test GET-request
         run: |
-          chmod +x ./tests/test.sh
-           \./tests/test.sh
+          chmod +x ./hello_app/tests/test.sh
+           \./hello_app/tests/test.sh
         shell: bash
