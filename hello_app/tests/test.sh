@@ -1,19 +1,13 @@
 #!/bin/bash
 
+output=$(./app.py)
 
-output=$(python3 ../app.py)
-
-
-today=$(date +'%Y-%m-%d')
-
-
-expected_output="$today"
-
+expected_output="05.07.2023"
 
 if [ "$output" == "$expected_output" ]; then
-    echo "успешно"
+	echo "Верно"
+	exit 0
 else
-    echo "Неуспешно"
-    echo "Ожидалось: $expected_output"
-    echo "Получено: $output"
+	echo "Неверно"
+	exit 1
 fi
