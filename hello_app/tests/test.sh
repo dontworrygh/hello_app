@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output=$(python3 app.py)
+output=$(python3 /app.py)
 
 expected_output="05.07.2023"
 
