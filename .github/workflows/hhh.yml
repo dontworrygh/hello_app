@@ -1,6 +1,8 @@
 name: Push Test
-run-name: Push Test
-on: push
+on: 
+	push:
+		branches:
+			-main
 jobs:
 	integration_testing:
 		runs-on: ubuntu-latest
