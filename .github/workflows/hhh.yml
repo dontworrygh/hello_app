@@ -23,3 +23,4 @@ jobs:
         run: python3 hello_app/app.py &
       - name: Run tests
         run: bash hello_app/tests/test.sh
+        
