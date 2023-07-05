@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-output=$(python3 /app.py)
+output=$(python3 ../app.py)
 
 
 today=$(date +'%Y-%m-%d')
